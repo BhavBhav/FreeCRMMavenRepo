@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods">
+
+	<listeners>
+        <listener class-name="com.qa.extentReportListener.ExtentReporterNG" />
+    </listeners>
+
+  <test thread-count="2" name="Test" parallel="methods">
+    <packages>
+      <package name="com.crm.qa.testCases"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
